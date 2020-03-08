@@ -1,0 +1,309 @@
+/* ===============================
+All styles: box-sizing and Font Family
+=================================*/
+
+*{
+    box-sizing: border-box;
+}
+
+/* ===========================================
+Base Layout: Main Elements color & sizing
+==============================================*/
+
+body{
+    margin: 0;
+    font-size: 1em;
+}
+
+body
+{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1{
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    background: #1e2d38;
+    margin: 0 auto;
+    padding: 30px;
+    text-shadow: -2px 1px 1px rgba(199, 199, 199, 0.5);
+    }
+
+form{
+    margin:10px auto 30px;
+    padding: 10px 10px;
+    max-width: 380px;
+    justify-content: space-between;
+}
+
+form h2,
+legend{
+    font-family: 'Pacifico';
+    font-style: italic;
+    color: #1e2d38;
+    text-shadow: -2px 1px 1px rgba(70, 67, 67, 0.421);
+}
+
+.form-header-block{
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-bottom: 8px solid #222;
+    border-width: 100%;
+}
+
+.form-header-block p{
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    color: rgb(100, 98, 98);
+}
+
+.content,
+.form-content2{
+    border-top: 3px solid #222;
+    margin-bottom: 30px;
+    
+}
+
+.form-content1,
+.form-content2{
+    padding: 5px 0;
+    margin: 10px 0;    
+}
+
+legend{
+    font-size:1.3em;
+    font-weight: bold;
+    padding: 20px 0;
+    margin-top: 50px 0;
+}
+
+fieldset{
+    border: none;
+    padding: 10px 5px;
+    margin: 5px auto;
+}
+
+.form-content1 label{
+    padding: 5px;
+    font-weight: bold;
+}
+
+input:placeholder-shown{
+    text-align: right;
+    font-family: 'VT323';
+
+}
+
+input:placeholder-shown:focus,
+textarea:placeholder-shown:focus{
+    text-align: left;
+    font-style: italic;
+    font-family: 'VT323';
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="select"],
+textarea,
+select {
+border-radius: 5px;
+font-size: 1em;
+width: 100%;
+margin: 15px auto;
+outline: 0;
+padding: 15px;
+background-color: #e8eeef;
+color: #333;
+margin-bottom: 30px;
+}
+
+button:hover,
+input:hover,
+select,
+label[class*="news"],
+label[class*="format"],
+textarea:hover
+{
+    cursor:pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="select"]:focus,
+textarea:focus,
+select:focus {
+  border: .5px solid #032740d5;
+  border-radius: 5px;
+  background:#fff;
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.2);
+  cursor: auto;
+}
+
+ul,
+ol{
+    list-style-type: none;
+    padding: 5px 0 30px;
+    margin: auto;
+}
+
+textarea{
+    display: block;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+button{
+    display: block;
+    width: 100%;
+    margin:5px auto 15px;
+    padding: 20px;
+    color: #FFF;
+    background-color: #0c91f0;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #032740;
+    border-width: 1px 1px 3.5px 3px;
+  }
+  
+
+footer{
+    margin: 30px auto;
+    text-align: center;
+    color:#999;
+    font-style: italic;
+}
+
+/* ================================
+        Media Queries
+==================================*/
+
+@media (min-width:768px){
+
+    body{
+        margin: 0;
+        font-size: 1.3em;
+    }
+
+
+    h1{
+        width: 100%;
+    }
+
+    form{
+        max-width: 750px;
+        box-shadow: 0px 0px 10px rgba(100, 148, 237, 0.4),
+                    -3px 2px 5px rgba(0, 0, 0, 0.204);
+        border-radius: 18px;
+    }
+
+    .form-header-block{
+        background-color: blanchedalmond;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    fieldset legend{
+        text-align: center;
+    }
+
+    .flexbox {   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+
+    .content{
+        background-color: #fff;
+        padding: 0 0 30px;
+        width:100%;
+    }
+
+    .primary label{
+        padding: 25px;
+        flex-basis: -1;
+        width:30%;
+        margin: 5px auto 5px 2px;
+    }
+
+    .primary input,
+    .primary select{
+        flex-basis: 1;
+        width:60%;
+        margin:10px auto;
+        padding-right: 20px;
+    }
+
+    legend{
+       margin-top: 0;
+       width: 100%;
+       background-color: #8bc9f623;
+    }
+
+    ul.radios{
+        margin-bottom: 20px;
+    }
+
+    .secondary label p{
+        font-weight:bold;
+    }
+
+    .secondary label p,
+    .secondary ul,
+    .textarea-label{
+        padding: 5px 150px;
+    }
+
+    .secondary li{
+        margin:10px auto;
+        padding:5px 0;
+    }
+
+    label[class="html-format"]{
+        background-image: url('../icons/html-icon.jpg');
+        background-repeat: no-repeat;
+        background-size: 30px;
+        padding-right: 45px;
+        background-position: right;
+    }
+
+    label[class="pt-format"]{
+        background-image: url('../icons/plain-txt.jpg');
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        padding-right: 25px;
+        background-position: right;
+    }
+
+
+    textarea{
+        padding: 10px 10px 50px;
+        margin: 30px auto;
+        min-width: 450px;
+        max-width: 450px;
+    }
+
+    button{
+        width: 50%;
+    }
+
+
+}
+
+@media (min-width:1024px){
+
+    form{
+        max-width: 850px;
+    }
+
+}
