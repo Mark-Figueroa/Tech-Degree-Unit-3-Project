@@ -13,6 +13,7 @@ Base Layout: Main Elements color & sizing
 body{
     margin: 0;
     font-size: 1em;
+    font-family: 'Crimson Text', serif;
 }
 
 body
@@ -129,8 +130,8 @@ margin-bottom: 30px;
 button:hover,
 input:hover,
 select,
-label[class*="news"],
-label[class*="format"],
+label[class*="-news"],
+label[class*="-format"],
 textarea:hover
 {
     cursor:pointer;
@@ -149,11 +150,22 @@ select:focus {
   cursor: auto;
 }
 
+.newsletter,
+.newsletter-type{
+    font-weight:bold;
+}
+
+
 ul,
 ol{
     list-style-type: none;
     padding: 5px 0 30px;
     margin: auto;
+}
+
+li{
+    padding:5px;
+    margin: 10px;
 }
 
 textarea{
@@ -252,10 +264,6 @@ footer{
 
     ul.radios{
         margin-bottom: 20px;
-    }
-
-    .secondary label p{
-        font-weight:bold;
     }
 
     .secondary label p,
